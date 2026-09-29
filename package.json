@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
     "dotenv": "^18.0.4",
-    "openai": "^7.23.0"
+    "openai": "^7.23.0",
+    "sharp": "^0.35.5"
   },
   "name": "open-ai-image-generation-test",
   "version": "1.0.0",
@@ -9,7 +11,9 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "node script.js"
+    "generate": "node script.js",
+    "edit": "node edit.js",
+    "smart-edit": "node smart-edit.js"
   },
   "repository": {
     "type": "git",

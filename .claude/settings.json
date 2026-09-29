@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:developers.openai.com)",
+      "PowerShell(npm install sharp)",
+      "Bash(time node edit.js generated-gpt-image-2.5-sunburst.png \"Change the neon sign text to OPEN in blue neon\" --box 125,50,160,420 --out edited-sign.png)",
+      "Bash(node -e ' *)",
+      "Bash(node -e 'require\\(\"sharp\"\\)\\(\"19a0ee37.jpg\"\\).metadata\\(\\).then\\(m => console.log\\(m.width, m.height, \"orientation:\", m.orientation, m.format\\)\\)')",
+      "Bash(node edit.js 19a0ee37.jpg \"x\" --box 1325,275,150,270 --preview)",
+      "Bash(node edit.js 19a0ee37.jpg \"x\" --box 305,505,470,137 --preview)",
+      "Bash(node edit.js 19a0ee37.jpg \"Replace the patterned rug on the floor with a red rug of the same size, shape and position. Keep the round brass table, the yellow sofa and the wooden floor exactly as they are.\" --box 305,505,470,137 --out edited-rug.png)",
+      "PowerShell(npm install @huggingface/transformers)",
+      "PowerShell(npm ls @huggingface/transformers)",
+      "Bash(node _proto.mjs 19a0ee37.jpg \"rug\")",
+      "Bash(grep -v \"^\\\\s*$\")",
+      "Bash(grep -v \"^\\\\s*[0-9n, ]*$\")",
+      "Bash(node _proto.mjs 19a0ee37.jpg \"a rug.\")",
+      "Bash(sed -i 's#^const masks = await processor.post_process_masks#console.log\\(\"keys\", Object.keys\\(out\\), Object.keys\\(inputs\\)\\); const masks = await processor.post_process_masks#' _proto.mjs)",
+      "Bash(rm -f _proto.mjs _proto.png)",
+      "Bash(node smart-edit.js 19a0ee37.jpg \"make the rug on the floor red\" --preview)",
+      "Bash(grep -v \"onnxruntime\\\\|^\\\\s*$\")",
+      "Bash(node smart-edit.js 19a0ee37.jpg \"make the rug on the floor red\" --out smart-rug.png)",
+      "Read(//d/Products/open-ai-image-generation-test/**)",
+      "Bash(node _proto.mjs 19a0ee37.jpg \"round brass table\")",
+      "Bash(rm -f _proto.mjs _proto2.mjs)",
+      "Bash(node smart-edit.js 19a0ee37.jpg \"make the rug on the floor red\" --out smart-rug-v2.png)",
+      "Bash(grep -v \"onnxruntime\\\\|^\\\\s*$\\\\|does not touch\")",
+      "Bash(node --check smart-edit.js)",
+      "Bash(node smart-edit.js 19a0ee37.jpg \"make the rug on the floor red\" --out smart-rug-v3.png)"
+    ]
+  }
+}
