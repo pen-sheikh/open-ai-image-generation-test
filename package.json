@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "openai": "^7.23.0"
+  },
+  "name": "open-ai-image-generation-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pen-sheikh/open-ai-image-generation-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pen-sheikh/open-ai-image-generation-test/issues"
+  },
+  "homepage": "https://github.com/pen-sheikh/open-ai-image-generation-test#readme"
+}
